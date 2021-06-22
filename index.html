@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav-link product-nav">
+        <div class="logo">
+          <img src="/images/logo.svg">
+        </div>
+        
+        <div class="test">
+            <button class="main-nav-button" id="product-link">
+              Product 
+              <i class="fa fa-caret-down"></i>
+            </button>
+          <div class="sub-nav" id="product-sub">
+            <p>Overview</p>
+            <p>Pricing</p>
+            <p>Marketplace</p>
+            <p>Features</p>
+            <p>Integrations</p>
+          </div>
+        </div>
+
+        <div class="test">
+        <button class="main-nav-button" id="company-link">
+          Company 
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="sub-nav">
+          <p>About</p>
+          <p>Team</p>
+          <p>Blog</p>
+          <p>Careers</p>
+        </div>
+        </div>
+
+        <div class="test">
+        <button class="main-nav-button" id="connect-link">
+          Connect 
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="sub-nav">
+          <p>Contact</p>
+          <p>Newsletter</p>
+          <p>LinkedIn</p>
+        </div>
+        </div>
+
+        <div class="sign-in">
+          <button id="button-bars" onclick="newbard()"><i id="bars" class="fa fa-bars"></i></button>
+          <button class="signin-button" id="login">Login</button>
+          <button class="signin-button" id="sign-up">Sign Up</button>
+        </div>
+      
+      </div>
+    
+      <!-- <div class="nav-link connect-nav">
+        <button class="main-nav-button" id="company-link">
+          Company 
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="sub-nav">
+          <p>About</p>
+          <p>Team</p>
+          <p>Blog</p>
+          <p>Careers</p>
+        </div>
+
+      </div>
+    
+      <div class="nav-link connect-nav">
+        <button class="main-nav-button" id="connect-link">
+          Connect 
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="sub-nav">
+          <p>Contact</p>
+          <p><Newsletter/p>
+          <p>LinkedIn</p>
+        </div> -->
+
+      
+      <!-- <div>&nbsp;</div> -->
+      <!-- <div class="sign-in">
+        <button id="login">Login</button>
+        <button id="sign-up">Sign Up</button>
+      </div>
+    </div> -->
+    </div>
+    
+  
+    <section>
+      <p id="section-head">
+        A modern publishing platform
+      </p>
+      <p id="section-body">
+        Grow your audience and build your online brand
+      </p>
+    
+      <button id="start">
+        Start for Free
+      </button>
+      <button id="learn">
+        Learn More
+      </button>
+    </section>
+  </header>
+
+  <main>
+    <div class="designed-container">
+          <div class="design-head">
+            Designed for the future
+          </div>
+
+          <div class="flex-container">
+            <div class="flex-one">
+              <div class="introduce">
+                <p class="body-head">Introducing an extensible editor</p>
+                <p class="body-body">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                  change the looks of a blog.</p>
+              </div>
+              <div class="robust">
+                    <p class="body-head">
+                      Robust content management
+                    </p>
+                  <p class="body-body">
+                    Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                  </p>
+              </div>
+              
+            </div>
+            <div class="flex-two">
+              <img class="img-1" src="/images/illustration-editor-desktop.svg">
+              <img class="img-2" src="/images/illustration-editor-mobile.svg">
+            </div>
+          </div>
+    </div>
+  
+    <div class="infrastructure-container">
+      <div class="image-div">
+        <img src="/images//illustration-phones.svg">
+      </div>
+      <div class="text-div">
+        <p class="body-head">
+          State of the Art Infrastructure
+        </p>
+        <p class="body-body">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </div>
+  
+    <div class="bottom-main-container">
+      <div class="top-flex">
+        <img class="img-1" src="/images/illustration-laptop-desktop.svg" alt="">
+        <img class="img-2" src="/images/illustration-laptop-mobile.svg">
+      </div>
+      <div class="bottom-flex">
+        <div class="introduce">
+          <p class="body-head">Free, open, simple</p>
+          <p class="body-body">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </div>
+        <div class="robust">
+              <p class="body-head">
+                Powerful tooling
+              </p>
+            <p class="body-body">
+              Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+            </p>
+        </div>
+      </div>
+   </div> 
+
+   <!-- media modal -->
+   
+    <div class="default-mobile-sub" id="main-mobile-container">
+      <div class="mobile-product">
+        <button class="mobile-nav-button" id="footer-product-button">
+          Product
+          <i id ="prod-carrot" class="fa fa-caret-down"></i>
+        </button>
+        <div class="default-mobile-sub" id="mobile-product-sub">
+          <p>Overview</p>
+          <p>Pricing</p>
+          <p>Marketplace</p>
+          <p>Features</p>
+          <p>Integrations</p>
+        </div>
+      </div>
+      <div class="mobile-company">
+        <button class="mobile-nav-button" id="footer-company-button">
+          Company
+          <i class="fa fa-caret-down" id ="comp-carrot"></i>
+        </button>
+        <div class="default-mobile-sub" id="mobile-company-sub">
+          <p>About</p>
+          <p>Team</p>
+          <p>Blog</p>
+          <p>Careers</p>
+        </div>
+      </div>
+      <div class="mobile-connect">
+        <button class="mobile-nav-button" id="footer-connect-button">
+          Connect
+          <i class="fa fa-caret-down" id ="conn-carrot"></i>
+        </button>
+        <div class="default-mobile-sub" id="mobile-connect-sub">
+          <p>Contact</p>
+          <p>Newsletter</p>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+      <hr id="split">
+      <button id="mobile-login" class="login">Login</button>
+      <button id="mobile-sign-up">Sign Up</button>
+      <button id="mobile-login" onclick="cancel()">Cancel</button>
+     </div>
+   
+
+
+  </main>
+
+  <footer>
+    <div id="logo">
+      <img src="/images/logo.svg" alt="logo">
+    </div>
+    <div id="footer-product">
+      <p class="p-top" id="footer-product">
+        Product
+      </p>
+
+      <p>
+        <div class="footer-links">
+          <p>Overview</p>
+          <p>Pricing</p>
+          <p>Marketplace</p>
+          <p>Features</p>
+          <p>Integrations</p>
+        </div>
+
+      </p>
+    </div>
+  
+    <div id="footer-company">
+      <p class="p-top" id="footer-company">Company</p>
+      <div class="footer-links">
+        <p>About</p>
+        <p>Team</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+
+    </div>
+    <div id="footer-connect">
+      <p class="p-top" id="footer-connect">Connect</p>
+      <div class="footer-links">
+        <p>Contact</p>
+        <p>Newsletter</p>
+        <p>LinkedIn</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="/javascript/index.js"></script>
+</body>
+</html>
